@@ -1,4 +1,4 @@
-# Análise por meio de grafos das bolsas de iniciação científca da UFRN 
+# Análise por meio de grafos das bolsas de iniciação científica da UFRN 
 
 ## 📋 Descrição do Projeto
 
