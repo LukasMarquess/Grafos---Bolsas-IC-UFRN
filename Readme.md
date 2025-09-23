@@ -19,7 +19,10 @@ Grafos---Bolsas-IC-UFRN/
 ├── GrafoPrincipal.ipynb           # Grafo completo e análise gráfica do mesmo
 ├── Subgrafos.ipynb                # Visualização de subgrafos por departamento
 ├── Iniciação_Ciêntifica - Dados Abertos.csv  # Dataset de entrada
-└── Readme.md                      # Arquivo de documentação
+├──  Readme.md   # Arquivo de documentação
+├── Prompts.md   #Arquivo com alguns prompts utilizados durante a construção do projeto
+├── Informações_DadosIC.ipynb   # Arquivo com alguns informações sobre os dados utilizados
+└── Slide de Apresentação - Lucas Marques e Diego Rabelo.pdf   # Arquivo com análises feitas com relação aos grafos montados
 ```
 
 ## 📊 Estrutura dos Dados
@@ -42,7 +45,8 @@ O dataset deve conter as seguintes colunas:
 - **NumPy** - Operações numéricas
 - **Scipy** - Algoritmos de layout para grafos
 - **Jupyter Notebook** - Ambiente de desenvolvimento
-- **Gemini 2.5** - Itelingência Artifical
+- **Gemini 2.5** - Intelingência Artifical
+- **CopilotPRO** - Intelingência Artifical
 
 ## 📈 Funcionalidades Principais
 
