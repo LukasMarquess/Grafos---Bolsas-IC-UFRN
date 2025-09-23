@@ -150,11 +150,6 @@ Número de discentes: 2.468
 - **Cache de cálculos** de grau e centralidade
 - **Operações vetorizadas** com pandas
 
-### Performance:
-- ⚡ **Tempo de criação do grafo**: ~2 segundos
-- ⚡ **Tempo de análises**: ~85ms
-- 💾 **Uso de memória**: Otimizado para grandes datasets
-
 ## 🎨 Visualizações
 
 ### Características das Visualizações:
