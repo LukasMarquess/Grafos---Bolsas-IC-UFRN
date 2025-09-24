@@ -41,7 +41,8 @@ O dataset deve conter as seguintes colunas:
 - **Python 3.13+**
 - **NetworkX** - Manipulação e análise de grafos
 - **Pandas** - Processamento de dados
-- **Matplotlib** - Visualização de grafos
+- **Matplotlib** - Visualização de grafos 2D
+- **Plotly** - Visualização interativa 3D e gráficos dinâmicos
 - **NumPy** - Operações numéricas
 - **Scipy** - Algoritmos de layout para grafos
 - **Jupyter Notebook** - Ambiente de desenvolvimento
@@ -84,15 +85,22 @@ O dataset deve conter as seguintes colunas:
 #### Funcionalidades:
 - **Seleção interativa** de departamentos
 - **Extração de subgrafos** específicos por unidade
-- **Visualização otimizada** com diferentes layouts
+- **Visualização 2D** otimizada com diferentes layouts (Matplotlib)
+- **Visualização 3D achatada** para demonstração educacional (Plotly)
 - **Legendas e cores** diferenciadas por tipo de nó
 - **Tamanhos proporcionais** baseados no número de conexões
 
-#### Layouts Disponíveis:
+#### Layouts 2D Disponíveis (Matplotlib):
 - `spring_layout` (padrão) - Layout baseado em forças
 - `kamada_kawai_layout` - Layout de energia mínima
 - `circular_layout` - Disposição circular
 - `random_layout` - Posicionamento aleatório
+
+#### Visualização 3D (Plotly):
+- **Visualização achatada** (todos os nós no mesmo nível Z=0)
+- **Interatividade completa** (zoom, rotação, pan)
+- **Hover information** com detalhes dos nós
+- **Renderização em HTML** para compatibilidade
 
 ## 🚀 Como Executar
 
@@ -100,7 +108,13 @@ O dataset deve conter as seguintes colunas:
 
 ```bash
 # Instalar dependências (se necessário)
-pip install pandas networkx matplotlib scipy numpy jupyter
+pip install pandas networkx matplotlib plotly scipy numpy jupyter
+
+# Ou usando conda
+conda install pandas networkx matplotlib plotly scipy numpy jupyter
+
+# Para instalação específica do Plotly com todas as extensões
+pip install plotly[complete]
 ```
 
 ### Execução
@@ -152,7 +166,7 @@ Número de discentes: 2.468
 
 ## 🎨 Visualizações
 
-### Características das Visualizações:
+### Características das Visualizações 2D (Matplotlib):
 - **Cores diferenciadas** por tipo de nó:
   - 🔵 Azul: Discentes
   - 🟢 Verde: Orientadores  
@@ -160,6 +174,18 @@ Número de discentes: 2.468
 - **Tamanhos proporcionais** ao número de conexões
 - **Transparência ajustável** para melhor visualização
 - **Legendas informativas**
+
+### Características das Visualizações 3D (Plotly):
+- **Visualização achatada (1 nível)**:
+  - **Z = 0**: Todos os nós posicionados no mesmo nível
+- **Funcionalidades interativas**:
+  - Zoom, rotação e pan em tempo real
+  - Hover com informações detalhadas dos nós
+  - Controles de câmera 3D
+- **Renderização otimizada**:
+  - HTML estático como fallback
+  - Compatibilidade com diferentes browsers
+  - Performance otimizada para grafos grandes
 
 ## 🔧 Configurações Avançadas
 
